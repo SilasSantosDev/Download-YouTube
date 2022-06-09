@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #101026;
+    font-family: sans-serif;
+}
+section{
+  width: 800px;
+  height: 400px;
+  background-color: #1d1d2e;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+section h1{
+    padding: 30px;
+    color: aliceblue;
+    font-size: 38px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    width: 63%;
+}
+section .link-container , .format-container, .btn-container{
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+    width: 500px;
+}
+section .link-container label, .format-container label{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color:#fff;
+    text-align: start;
+}
+section .link-container input, .format-container select{
+    outline: none;
+    height: 35px;
+    padding: 0 10px;
+    border:0;
+    color: #101026;
+    border: 2px solid #444;
+    border-radius: 5px;
+}
+section .btn-container button{
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #33c965;
+    border: 0;
+    transition: all 0.3s;
+}
+section .btn-container button:hover{
+    background-color: #249c4c;
+}
+@media (max-width:830px){
+    section .link-container, .format-container, .btn-container{
+        width: 85%;
+    }
+    section h1{
+        font-size: 30px;
+    }
+}
